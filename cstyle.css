@@ -1,0 +1,482 @@
+ /* css reset */
+ * {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ~~first page~~ */
+#firstpage {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+}
+
+/* ~~navbar styling~~ */
+#navbar {
+    /* border: 2px solid red; */
+    /* background-color: wheat; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr) ); */
+
+    grid-template-columns: 1fr 8fr 1fr;
+    background-color: rgb(247, 241, 247);
+
+}
+
+#left {
+    /* border: 2px solid red; */
+    padding: 0px 0px;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+#mid {
+    /* border: 2px solid red; */
+}
+
+#mid ul {
+    /* border: 2px solid red; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    margin-top: 56px;
+}
+
+#mid ul .item {
+
+}
+
+#mid ul .item a {
+    /* border: 2px solid red; */
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+    /* font-size: 1rem; */
+}
+
+#mid ul .item a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#right {
+    /* border: 2px solid red; */
+    padding: 0px 0px;
+    margin-top: 55px;
+    text-align: start;
+}
+
+#right h4{
+    border: 2px solid black;
+    display: inline-block;
+    background-color: rgb(247, 228, 228);
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#right h4:hover{
+    background-color: rgb(253, 207, 207);
+}
+
+/* container (just after navbar) */
+#container {
+    /* border: 2px solid red; */
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 241, 247);
+    z-index: -5;
+    height: 680px;
+}
+
+/* inside container */
+#back {
+    /* border:2px solid red; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    
+}
+
+#back::before {
+    content: "";
+    background: url('imag3/bg/pexels-toni-cuenca-585752-edit.jpg') no-repeat top center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#back p{
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+#back h1{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* ~~utility function~~ */
+.btn{
+    background-color: rgb(253, 246, 246);
+    color: black;
+    width: 20%;
+    height: 8%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+/* not working this, fix this later */
+.btn a:hover{
+    color: tomato;
+}
+
+/* ~~ secondpage ~~ */
+  #secondpage {
+    background-color: rgb(247, 241, 247);
+}
+
+.h-primary {
+    text-align: center;
+    background-color: rgb(247, 241, 247);
+    font-size: 1rem;
+    padding-top: 110px;
+    padding-bottom: 50px;
+
+}
+
+/* this does not include h3 of main */
+#cupgallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(247, 241, 247);
+    /* height: 400px; */
+}
+
+#cupgallery .box img {
+    /* display: block; */
+    /* display: inline; */
+    height: 350px;
+    padding: 0px 2px;
+    margin: 5px auto;
+}
+
+.box p {
+    text-align: center;
+    padding: 3px;
+    margin: 2px;
+    /* border: 2px solid red; */
+}
+
+.void{
+    height: 160px;
+    background-color: rgb(247, 241, 247);
+}
+
+.red{
+    color: rgba(139, 11, 11, 0.836);
+    font-size: 1.2rem;
+}
+
+/* ~~third page~~ */
+        
+#magazine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* width: 400px; */
+    /* border: 2px solid red; */
+    background-color: rgb(247, 241, 247);
+}
+
+#magazine-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#div1{
+    justify-content: center;
+}
+
+#div2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#imag1{
+    height: 240px;
+    padding: 0px 2px;
+    margin: 5px 5px;
+}
+
+#imag2{
+    height: 113px;
+    padding: 0px 2px;
+    margin: 5px auto;
+}
+
+#imag3{
+    height: 115px;
+    padding: 0px 2px;
+    margin: 5px auto;
+}
+
+#magazine-details{
+    /* border: 2px solid red; */
+    /* height: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+#magazine-details p{
+    padding: 2px 0px;
+    margin: 5px 0px;
+}
+
+#margin-details h1{
+    margin-top: 3px ;
+}
+
+#p1{
+    font-size: 15px;
+}
+
+#p2{
+    font-size: 15px;
+}
+
+#p3{
+    font-size: 15px;
+}
+
+#magazine-details button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(19, 17, 17);
+    color: white;
+    margin-top: 5px;
+}
+
+#bg-down{
+    height: 370px;
+    position: relative;
+    background-color: rgb(247, 241, 247);
+    /* top: 0px; */
+}
+
+#bg-down::before{
+    content: "";
+    background: url('imag3/bg/pexels-rahul-pandit-2766006.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+    /* z-index: -1; */
+    opacity: 0.99;
+}
+
+.h-tertiary {
+    text-align: center;
+    background-color: rgb(247, 241, 247);
+    font-size: 1rem;
+    padding-top: 70px;
+    padding-bottom: 38px;
+
+}
+
+/* ~~fourth page~~ */
+
+#lifestyle .box3 {
+    /* border: 2px solid red; */
+}
+
+#lifestyle {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 241, 247);
+}
+
+#lifestyle .box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 20%; */
+    /* this works insted of above for responsiveness */
+    width: 300px;
+    background-color: white;
+    margin: 8px 8px;
+}
+
+#lifestyle .box3 img {
+    display: block;
+    height: 290px;
+    width: 100%;
+    padding: 0px 2px;
+}
+
+#lifestyle .para {
+    width: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+    
+}
+
+#lifestyle p {
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+
+/* not working find out why */
+#para .p-date{
+    font-size: 2px;
+}
+
+/* ~~fifth-page~~ */
+
+#fifth-page{
+    
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    background-color: rgb(247, 241, 247);
+}
+
+#contact h1{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+#contact p{
+    margin: 5px;
+    font-size: 0.98rem;
+}
+
+#contact form{
+    /* border: 2px solid red; */
+    width: 515px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#contact .inputs{
+    padding: 2px 5px;
+    margin-top: 8px;
+}
+
+#name{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#input1{
+    width: 242px;
+    height: 25px;
+}
+
+#input2{
+    width: 243px;
+    height: 25px;
+    
+}
+
+#input3{
+    width: 500px;
+    height: 25px;
+    
+}
+
+#input4{
+    width: 500px;
+    height: 25px;
+
+}
+
+#contact button{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(15, 14, 14);
+}
+
+#contact button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#contact button:hover{ 
+    text-decoration: underline;
+}
+
+.h-tertiary-b {
+    text-align: center;
+    background-color: rgb(247, 241, 247);
+    font-size: 1rem;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+#bg-down-b{
+    height: 200px;
+    position: relative;
+    background-color: rgb(247, 241, 247);
+    /* top: 0px; */
+}
+
+#bg-down-b::before{
+    content: "";
+    background-color: rgb(94, 91, 91);
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    height: 188px;
+    width: 100%;
+    /* z-index: -1; */
+    opacity: 0.99;
+}

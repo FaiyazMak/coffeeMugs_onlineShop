@@ -1,0 +1,72 @@
+body{
+    /* background-color: blue; */
+}
+
+/*  ~~first page~~ */
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+#mid ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+
+#mid ul .item a {
+    padding: 0px 8px;
+    color: black;
+    font-size: 1rem;
+}
+
+#right {
+   
+    padding: 0px 0px;
+    text-align: right;
+    margin-top: 10px;
+
+}
+
+#left {
+   
+    padding: 0px 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ~~second page~~ */
+#cupgallery .box img {
+   
+   height: 200px;
+
+}
+
+.void{
+    height: 30px;
+}
+
+.h-primary {
+  
+    font-size: 0.7rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+/* ~~third page~~ */
+.h-tertiary {
+  
+    font-size: 0.7rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+/* ~~fourth page~~ */
+/* not required here */
+
+
+
